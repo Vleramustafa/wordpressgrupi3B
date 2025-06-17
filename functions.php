@@ -8,7 +8,11 @@ function load_scripts(){
         filemtime(get_template_directory().'/style.css'),'all'
     );
 
+    wp_enqueue_style('bootstrap',get_template_directory_uri().'/css/bootstrap.min.css');
+
     wp_enqueue_script('dropdown',get_template_directory().'/js/dropdown.js',array(),'1.0',false);
+
+    wp_enqueue_script('bootstrap2',get_template_directory().'/js/boostrap.bundle.min.js',array('jquery'));
 
 }
 
